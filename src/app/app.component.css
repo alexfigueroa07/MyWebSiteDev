@@ -18,7 +18,7 @@ body {
     background-color: rgb(21, 21, 21);
     padding: 0 20px;
     margin: 0px;
-    /* Agrega espaciado a los lados */
+
 }
 
 .nombre {
@@ -63,22 +63,18 @@ body {
 
 .menu-options a {
     display: block;
+    width: 150px;
     padding: 10px;
     color: azure;
+    text-align: left;
     text-decoration: none;
-    /* Elimina el color de los enlaces */
     background-color: transparent;
-    /* Agrega un fondo transparente para que se vean como bloques cuadrados */
     border-radius: 0;
-    /* Borra los bordes redondeados */
     transition: background-color 0.3s;
-    /* Agrega una transición al color de fondo */
-
 }
 
 .menu-options a:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-    /* Cambia el color de fondo al pasar el mouse */
+    background-color: rgba(33, 177, 10, 0.8);
 }
 
 .menu-container:hover .menu-options {
@@ -86,15 +82,12 @@ body {
 }
 
 .menu-icon {
-    width: 24px;
-    /* Ajusta el ancho del icono según sea necesario */
-    height: 24px;
-    /* Ajusta el alto del icono según sea necesario */
+    width: 35px;
+    height: 35px;
 }
 
 
 
-/* footer.component.css */
 
 .footer {
     background-color: #1a1a1a;
