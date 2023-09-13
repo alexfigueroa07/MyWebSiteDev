@@ -1,0 +1,108 @@
+* {
+    font-family: sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: aliceblue;
+    margin: 0px;
+    padding: 0px;
+}
+
+.perfil-container {
+    display: flex;
+    height: 70vh;
+}
+
+.imagen-section {
+    flex: 3;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto-bloque {
+    flex: 7;
+    padding: 20px;
+    background-color: #2c2c2c;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+button {
+    margin-top: 10px;
+}
+
+.info-academica h2 {
+    font-size: 35px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.info-academica ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+}
+
+.info-academica ul li {
+    margin-bottom: 5px;
+    margin-top: 20px;
+}
+
+.info-academica ul li strong {
+    font-weight: bold;
+}
+
+.imagen-seccion {
+    width: 100px;
+    height: auto;
+    margin-left: 10px;
+    float: right;
+}
+
+.button-container {
+    display: flex;
+    gap: 10px;
+}
+
+.button-container button {
+    padding: 10px 20px;
+    background-color: #16b104;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.button-container button:hover {
+    background-color: #078328;
+    transform: translateY(-2px);
+}
+
+.button-container button span {
+    display: flex;
+    align-items: center;
+}
+
+.imagen-seccion-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    /* Ajusta el margen según sea necesario */
+}
+
+.imagen-seccion {
+    width: 100px;
+    height: auto;
+    margin-left: 10px;
+    /* Espacio entre el texto y la imagen */
+}

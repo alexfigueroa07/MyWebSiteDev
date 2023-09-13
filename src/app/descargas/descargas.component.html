@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DESCARGAS</title>
+</head>
+
+<body>
+    <div class="descargas-container">
+        <div class="lista">
+            <h2>Archivos disponibles</h2>
+            <ul>
+                <li (click)="seleccionarElemento('CURRICULUM')">CURRICULUM</li>
+                <li (click)="seleccionarElemento('CERTIFICADOS')">CERTIFICADOS</li>
+                <li (click)="seleccionarElemento('CARTA')">CARTA PRESENTACIÓN</li>
+            </ul>
+        </div>
+
+        <div class="imagen-previa">
+            <img src="\assets\images\archivo.png" alt="Imagen previa">
+            <button (click)="descargarArchivo()" *ngIf="elementoSeleccionado">Descargar {{ elementoSeleccionado
+                }}</button>
+            <a [href]="archivoPDF" target="_blank" [download]="elementoSeleccionado + '.pdf'"
+                *ngIf="elementoSeleccionado" style="display:none">Descargar</a>
+        </div>
+    </div>
+</body>
+
+</html>

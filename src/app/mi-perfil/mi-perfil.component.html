@@ -1,0 +1,66 @@
+<div class="perfil-container">
+    <div class="imagen-section">
+        <!-- Coloca tu imagen aquí -->
+        <img src="\assets\images\perfil.jpeg" alt="Tu Imagen">
+    </div>
+
+    <div class="texto-bloque">
+        <!-- Sección Académica -->
+        <div *ngIf="mostrarAcademica" class="info-academica">
+            <h2>PERFIL ACADÉMICO</h2>
+            <ul>
+                <ul>
+                    <li><strong>PREPARATORIA: </strong> CECyTEA Calvillo - Tecnico en programación</li>
+                    <li><strong>UNIVERSIDAD: </strong>UTA - Ing. Tecnologías de la información</li>
+                    <li><strong>ESPECIALIDAD: </strong> Desarrollo web, FullStack</li>
+                    <li><strong>MAESTRÍA: </strong> Próximanente</li>
+
+
+                    <!-- Agrega más información académica según sea necesario -->
+                </ul>
+            </ul>
+            <div class="imagen-seccion-container">
+                <img src="\assets\images\graduacion.png" alt="Imagen Académica" class="imagen-seccion">
+            </div>
+        </div>
+
+        <!-- Sección Laboral -->
+        <div *ngIf="mostrarLaboral" class="info-academica">
+            <h2>PERFIL LABORAL</h2>
+            <ul>
+                <li><strong>EVOLUTION: </strong>Admon de Base de datos</li>
+                <li><strong>UTC: </strong>Profesor de asignatura de TI. - TSU</li>
+                <li><strong>UTA: </strong>Profesor de asignatura de TI - Ingeniería </li>
+                <li><strong>EMPRENDIMIENTO: </strong>Negocio familiar</li>
+                <!-- Agrega más información académica según sea necesario -->
+            </ul>
+            <div class="imagen-seccion-container">
+                <img src="\assets\images\certificado.png" alt="Imagen Laboral" class="imagen-seccion">
+            </div>
+        </div>
+
+        <!-- Sección de Habilidades -->
+        <div *ngIf="mostrarPersonal" class="info-academica">
+            <h2>MIS HABILIDADES</h2>
+            <ul>
+                <li><strong>IDIOMAS: </strong> Español / Ingles</li>
+                <li><strong>DESARROLLO WEB: </strong> React, Angular, HTML, CSS, Js, Ts, Node.js</li>
+                <li><strong>LENGUAJES DE PROGRAMACIÓN:</strong>Java, Python, etc...</li>
+                <li><strong>HABILIDADES:</strong> Trabajo en equipo, autodidacta</li>
+                <!-- Agrega más información académica según sea necesario -->
+            </ul>
+            <div class="imagen-seccion-container">
+                <img src="\assets\images\desarrollo-web.png" alt="Imagen de Habilidades" class="imagen-seccion">
+            </div>
+        </div>
+        <!-- Agrega tus botones aquí -->
+        <div class="button-container">
+            <button
+                (mouseover)="mostrarAcademica = true; mostrarLaboral = false; mostrarPersonal = false;">ACADÉMICO</button>
+            <button
+                (mouseover)="mostrarAcademica = false; mostrarLaboral = true; mostrarPersonal = false;">LABORAL</button>
+            <button
+                (mouseover)="mostrarAcademica = false; mostrarLaboral = false; mostrarPersonal = true;">HABILIDADES</button>
+        </div>
+
+    </div>

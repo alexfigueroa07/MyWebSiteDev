@@ -1,0 +1,122 @@
+* {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: aliceblue;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    background-color: rgb(21, 21, 21);
+    padding: 0 20px;
+    margin: 0px;
+    /* Agrega espaciado a los lados */
+}
+
+.nombre {
+    color: azure;
+    font-size: 24px;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.perfil {
+    color: azure;
+    font-size: 16px;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.menu-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.menu-button {
+    background-color: transparent;
+    color: azure;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    margin-right: 20px;
+}
+
+.menu-options {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: rgb(21, 21, 21);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    text-align: right;
+}
+
+.menu-options a {
+    display: block;
+    padding: 10px;
+    color: azure;
+    text-decoration: none;
+    /* Elimina el color de los enlaces */
+    background-color: transparent;
+    /* Agrega un fondo transparente para que se vean como bloques cuadrados */
+    border-radius: 0;
+    /* Borra los bordes redondeados */
+    transition: background-color 0.3s;
+    /* Agrega una transición al color de fondo */
+
+}
+
+.menu-options a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    /* Cambia el color de fondo al pasar el mouse */
+}
+
+.menu-container:hover .menu-options {
+    display: block;
+}
+
+.menu-icon {
+    width: 24px;
+    /* Ajusta el ancho del icono según sea necesario */
+    height: 24px;
+    /* Ajusta el alto del icono según sea necesario */
+}
+
+
+
+/* footer.component.css */
+
+.footer {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer p {
+    margin: 5px 0;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}

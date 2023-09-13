@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="redes-container">
+        <div class="red-social" *ngFor="let redSocial of redesSociales">
+            <img src="assets/images/{{ redSocial.icono }}" alt="{{ redSocial.nombre }}" class="icono">
+            <button (click)="abrirRedSocial(redSocial.enlace)">Ir a {{ redSocial.nombre }}</button>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
